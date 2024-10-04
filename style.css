@@ -1,0 +1,114 @@
+/* style.css */
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom styles for header text */
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+/* Customize the hero section text */
+header p {
+    font-size: 1.25rem;
+    color: #d1d5db;
+}
+
+
+/* Navbar styles */
+nav a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #fefefe;
+}
+
+/* Card hover effect */
+.bg-gray-700:hover {
+    background-color: #374151;
+}
+
+/* Contact form styles */
+form input,
+form textarea {
+    border: 1px solid #4b5563;
+}
+
+/* Footer styles */
+footer p {
+    font-size: 1rem;
+}
+
+/* Additional styles for the hero section */
+header .bg-black {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('assets/image.jpg') no-repeat center center/cover; /* Ganti dengan gambar */
+}
+
+/* Styles for grid items */
+.grid-item img {
+    border-radius: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .gallery-item,
+    .certificate-item,
+    .organization-item {
+        width: 100%;
+    }
+}
+
+.star-container {
+    position: relative;
+    height: 200px; /* Increased height for more vertical space */
+  }
+
+  .star {
+    position: absolute;
+    width: 40px; /* Increased size for a larger star */
+    height: 40px; /* Increased size for a larger star */
+    background-color: yellow; /* Star color */
+    clip-path: polygon(
+      50% 0%, 
+      61% 35%, 
+      98% 35%, 
+      68% 57%, 
+      79% 91%, 
+      50% 70%, 
+      21% 91%, 
+      32% 57%, 
+      2% 35%, 
+      39% 35%
+    );
+    animation: glitterAnimation 1.5s infinite;
+    opacity: 0.8;
+  }
+
+  @keyframes glitterAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+  }
+
